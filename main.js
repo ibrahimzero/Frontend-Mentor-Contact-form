@@ -46,5 +46,55 @@ if(email){
     document.querySelector('#email').style.border='1px solid var(--Red)'
     
 }
+if(validateEmail(email)){
+    isValid=true
+    document.querySelector('#email + .error-input').style.display='none';
+    document.querySelector('#email').style.border='1px solid var(--Grey-500-medium)'
+}else{
+isValid=false;
+document.getElementById('un-valid').style.display='block';
+document.querySelector('#email').style.border='1px solid var(--Red)'
+    
+}
+if(message){
+    isValid=true;
+    document.querySelector('#message + .error-input').style.display='none';
+    document.querySelector('#message').style.border='1px solid var(--Grey-500-medium)'
+    
+}else{
+    isValid=false;
+    document.querySelector('#message + .error-input').style.display='block';
+    document.querySelector('#message').style.border='1px solid var(--Red)'
+    
+}
+if(query){
+    isValid=true;
+    document.querySelector('.radio-flex + .error-input').style.display='none';
+    
+}else{
+    isValid=false;
+    document.querySelector('.radio-flex + .error-input').style.display='block';
+    
+
+}
+
+if(consent){
+    isValid=true;
+    document.querySelector('#error-input').style.display='none';
+    
+}else{
+    isValid=false;
+    document.querySelector('#error-input').style.display='block';
+    
+}
+if(isValid){
+    successMsg.classList.add('active');
+    form.reset()
+}
+
 
 })
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }

@@ -84,6 +84,7 @@ h1{
  
     
 }
+
 .message-container{
     width: 100%;
     display: flex;
@@ -95,7 +96,7 @@ h1{
 .consent-container input{
     margin: .7rem 0;
 }
-.error-input,.un-valid{
+.error-input,#un-valid{
     color: var(--Red);
     display: none;
 }

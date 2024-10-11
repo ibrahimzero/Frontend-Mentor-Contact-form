@@ -30,9 +30,9 @@
       <label for="lastName"> Email Address <span class="required">*</span></label>
       <input type="email" id="email" placeholder="email#example.com">
       <p class="error-input">This field is required</p>
-      <p class="un-valid">Please enter a valid email address</p>
+      <p id="un-valid">Please enter a valid email address</p>
     </div>
-    <div class="query">
+    <div class="query" id="query">
       <label for="lastName"> Query Type <span class="required">*</span></label>
       <div class="radio-flex">
       
@@ -55,7 +55,7 @@
     <div class="consent-container">
       <input type="checkbox" name="consent" id="consent">
       <label for="consent">I consent to being contacted by the team</label>
-      <p class="error-input">To submit this form, please consent to being contacted</p>
+      <p class="error-input" id="error-input">To submit this form, please consent to being contacted</p>
     </div>
     <input type="submit" id="submit" >
     <div id="send-msg">
