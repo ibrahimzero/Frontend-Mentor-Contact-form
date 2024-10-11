@@ -24,15 +24,26 @@ if(firstName){
     
 }
 
-if(firstName){
+if(lastName){
     isValid=true;
-    document.querySelector('#firstName + .error-input').style.display='none';
-    document.querySelector('#firstName').style.border='1px solid var(--Grey-500-medium)'
+    document.querySelector('#lastName + .error-input').style.display='none';
+    document.querySelector('#lastName').style.border='1px solid var(--Grey-500-medium)'
     
 }else{
     isValid=false;
-    document.querySelector('#firstName + .error-input').style.display='block';
-    document.querySelector('#firstName').style.border='1px solid var(--Red)'
+    document.querySelector('#lastName + .error-input').style.display='block';
+    document.querySelector('#lastName').style.border='1px solid var(--Red)'
+    
+}
+if(email){
+    isValid=true;
+    document.querySelector('#email + .error-input').style.display='none';
+    document.querySelector('#email').style.border='1px solid var(--Grey-500-medium)'
+    
+}else{
+    isValid=false;
+    document.querySelector('#email + .error-input').style.display='block';
+    document.querySelector('#email').style.border='1px solid var(--Red)'
     
 }
 
